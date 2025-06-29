@@ -10,8 +10,7 @@ Hey, I’m Chase — I love building cool things on the web, figuring out how st
 JavaScript • Python • C++ • C • Java • TypeScript • OCaml • Bash • SQL • HTML5 • CSS
 
 ### 🚀 Frameworks & Technologies  
-React • Node.js • Express • Tailwind CSS • Cloud-IaC • npm • Netlify • Vercel
- • SpringBoot
+React • Node.js • Express • MongoDB • Tailwind CSS • Cloud-IaC • npm • SpringBoot
 
 ### 🛠️ Tools & Platforms  
 Git • GitHub • AWS • AzureDevOps • Jenkins • DataDog • Docker • Spinnaker

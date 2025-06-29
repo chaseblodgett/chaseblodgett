@@ -12,40 +12,82 @@ export default function ParticlesBackground() {
       id="tsparticles"
       init={particlesInit}
       options={{
-        background: {
-          color: "#0d1117",
+        fpsLimit: 60,
+        
+        fullScreen: {
+          enable: true,
+          zIndex: -1, 
         },
-        fpsLimit: 120,
         interactivity: {
-            events: {
-                onClick: {
-                    enable: true,
-                    mode: "push",
-                },
-                onHover: {
-                    enable: true,
-                    mode: "repulse",
-                },
-                resize: true,
+          events: {
+            onHover: {
+              enable: true,
+              mode: "trail",
             },
-            modes: {
-                push: {
-                    quantity: 4,
+            resize: true,
+          },
+          modes: {
+            trail: {
+              delay: 0.0001,
+              quantity: 1,
+              pauseOnStop: true,
+              particles: {
+                color: {
+                  value: [ "#818cf8", "#a855f7", "#ec4899" ],
                 },
-                repulse: {
-                    distance: 200,
-                    duration: 0.4,
+                opacity: {
+                  value: 1,
+                  animation: {
+                    enable: true,
+                    speed: 5,
+                    minimumValue: 0, 
+                    sync: false,
+                  },
                 },
+                size: {
+                  value: 2,
+                  animation: {
+                    enable: true,
+                    speed: 2,
+                    minimumValue: 0.5,
+                    sync: false,
+                  },
+                },
+              },
             },
+          },
         },
         particles: {
-          color: { value: "#ffffff" },
-          links: { enable: true, color: "#ffffff", distance: 150 },
-          move: { enable: true, speed: 3 },
-          size: { value: { min: 1, max: 3 } },
-          number: { value: 75 },
+          color: { value: [ "#818cf8", "#a855f7", "#ec4899" ]}, 
+          links: {
+            enable: true,
+            color: "random",
+            distance: 120,
+            opacity: 0.3,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 0.5,
+          },
+          number: {
+            value: 150,
+          },
+          size: {
+            value: { min: 1, max: 3 },
+          },
+          opacity: {
+            value: 1,
+            animation: {
+              enable: true,
+              speed: 0.5,
+              minimumValue: 0.2,
+              sync: false,
+            },
+          },
         },
       }}
     />
   );
+  
 }
