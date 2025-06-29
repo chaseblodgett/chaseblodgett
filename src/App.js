@@ -84,7 +84,7 @@ function App() {
         ref={aboutMe}
         className="relative clip-pentagon min-h-[calc(100vh+20rem)] mb-[-16]  px-6 py-24"
         style={{
-          backgroundImage: 'linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(17,24,39,0.9), rgba(23,37,84,0.9))',
+          backgroundImage: 'linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(17,24,39,0.8), rgba(23,37,84,0.8))',
           backgroundBlendMode: 'overlay',
         }}
       >
@@ -96,7 +96,7 @@ function App() {
         ref={experience}
         className="relative clip-pentagon min-h-[calc(100vh+20rem)] -mt-48 px-6 py-24"
         style={{
-          backgroundImage: 'linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(17,24,39,0.9), rgba(23,37,84,0.9))',
+          backgroundImage: 'linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(17,24,39,0.8), rgba(23,37,84,0.8))',
           backgroundBlendMode: 'overlay',
         }}
       >
@@ -107,7 +107,7 @@ function App() {
         ref={projects}
         className="relative clip-pentagon min-h-[calc(100vh+20rem)] -mt-48 px-6 py-24"
         style={{
-          backgroundImage: 'linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(17,24,39,0.9), rgba(23,37,84,0.9))',
+          backgroundImage: 'linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(17,24,39,0.8), rgba(23,37,84,0.8))',
           backgroundBlendMode: 'overlay',
         }}
       >

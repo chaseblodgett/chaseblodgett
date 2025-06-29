@@ -20,13 +20,17 @@ module.exports = {
         },
         fadeIn: {
           '0%': { opacity: 0 },
+          // '25%': { opacity: 0.25 },
+          // '50%': { opacity: 0.5 },
+          // '75%': { opacity: 0.75 },
           '100%': { opacity: 1 },
         },
       },
       animation: { 
-        'slide-in-left': 'slide-in-left 1s ease-out', 
-        'slide-in-right': 'slide-in-right 1s ease-out', 
-        'slide-up': 'slide-up 1s ease-out', 
+        'slide-in-left': 'slide-in-left 1s ease-in-out', 
+        'slide-in-right': 'slide-in-right 1s ease-in-out', 
+        'slide-up': 'slide-up 1s ease-in-out', 
+        'fade-in': 'fadeIn 3s ease-in-out forward', 
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
