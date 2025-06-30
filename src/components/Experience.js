@@ -41,7 +41,7 @@ export default function Experience(){
              
               <div className="flex items-start gap-2 md:gap-4">
                 <img
-                  src="/thomsonreuters.jpg"
+                  src={`${process.env.PUBLIC_URL}/thomsonreuters.jpg`}
                   alt="Thomson Reuters"
                   className="w-14 h-14 object-cover rounded-md shadow-sm work-logo"
                 />
@@ -70,7 +70,7 @@ export default function Experience(){
             <div className="flex justify-between items-start gap-2 md:gap-6 w-full px-2 sm:px-12 md:px-24 lg:px-32 text-xs sm:text-sm md:text-lg">
               <div className="flex items-start gap-2 md:gap-4">
                 <img
-                  src="/mn.jpg"
+                  src={`${process.env.PUBLIC_URL}/mn.jpg`}
                   alt="UofM"
                   className="w-14 h-14 object-cover rounded-md shadow-sm work-logo"
                 />

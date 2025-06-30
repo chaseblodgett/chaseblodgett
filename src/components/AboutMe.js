@@ -42,7 +42,7 @@ export default function AboutMe(){
                     }`}
                     >
                     
-                    <img src="/person.svg" className="person-svg"/>
+                    <img src={`${process.env.PUBLIC_URL}/person.svg`} className="person-svg"/>
                     
                     <p className="px-2 sm:px-4 md:px-8 lg:px-12 text-left text-md md:text-xl xl:px-20 2xl:px-40 text-slate-300">
                         Hello! My name is Chase, and I recently graduated from the University of Minnesota–Twin Cities with a degree in Computer Science. 
@@ -63,7 +63,7 @@ export default function AboutMe(){
                         <div className={`icon-container ${
                                 isVisible ? 'transform transition-all duration-700 ease-in delay-[800ms]' : 'opacity-0 translate-y-8'
                             }`}>
-                            <img src="/c_plus.svg" className="icon-image"/>
+                            <img src={`${process.env.PUBLIC_URL}/c_plus.svg`} className="icon-image"/>
                             <p className="icon-label">C++</p>
                         </div>
                     
@@ -71,14 +71,14 @@ export default function AboutMe(){
                         <div  className={`icon-container ${
                                 isVisible ? 'transform transition-all duration-700 ease-in delay-[1000ms]' : 'opacity-0 translate-y-8'
                             }`}>
-                            <img src="/css.svg" className="icon-image"/>
+                            <img src={`${process.env.PUBLIC_URL}/css.svg`} className="icon-image"/>
                             <p className="icon-label">CSS</p>
                         </div>
 
                         <div  className={`icon-container ${
                                 isVisible ? 'transform transition-all duration-700 ease-in delay-[1200ms]' : 'opacity-0 translate-y-8'
                             }`}>
-                            <img src="/aws.svg" className="icon-image"/>
+                            <img src={`${process.env.PUBLIC_URL}/aws.svg`} className="icon-image"/>
                             <p className="icon-label">AWS</p>
                         </div>
 
@@ -89,28 +89,28 @@ export default function AboutMe(){
                         <div  className={`icon-container ${
                                 isVisible ? 'transform transition-all duration-700 ease-in delay-[800ms]' : 'opacity-0 translate-y-8'
                             }`}>
-                            <img src="/c.svg" className="icon-image"/>
+                            <img src={`${process.env.PUBLIC_URL}/c.svg`} className="icon-image"/>
                             <p className="icon-label">C</p>
                         </div>
 
                         <div  className={`icon-container ${
                                 isVisible ? 'transform transition-all duration-700 ease-in delay-[1000ms]' : 'opacity-0 translate-y-8'
                             }`}>
-                            <img src="/python.svg" className="icon-image"/>
+                            <img src={`${process.env.PUBLIC_URL}/python.svg`} className="icon-image"/>
                             <p className="icon-label">PYTHON</p>
                         </div>
 
                         <div className={`icon-container ${
                                 isVisible ? 'transform transition-all duration-700 ease-in delay-[1200ms]' : 'opacity-0 translate-y-8'
                             }`}>
-                            <img src="/git.svg" className="icon-image"/>
+                            <img ssrc={`${process.env.PUBLIC_URL}/git.svg`} className="icon-image"/>
                             <p className="icon-label">GIT</p>
                         </div>
 
                         <div className={`icon-container ${
                                 isVisible ? 'transform transition-all duration-700 ease-in delay-[1400ms]' : 'opacity-0 translate-y-8'
                             }`}>
-                            <img src="/html.svg" className="icon-image"/>
+                            <img src={`${process.env.PUBLIC_URL}/html.svg`} className="icon-image"/>
                             <p className="icon-label">HTML</p>
                         </div>
                     </div>
@@ -120,14 +120,14 @@ export default function AboutMe(){
                         <div className={`icon-container ${
                                 isVisible ? 'transform transition-all duration-700 ease-in delay-[800ms]' : 'opacity-0 translate-y-8'
                             }`}>
-                            <img src="/javascript.svg" className="icon-image"/>
+                            <img src={`${process.env.PUBLIC_URL}/javascript.svg`} className="icon-image"/>
                             <p className="icon-label">JAVASCRIPT</p>
                         </div>
 
                         <div className={`icon-container ${
                                 isVisible ? 'transform transition-all duration-700 ease-in delay-[1000ms]' : 'opacity-0 translate-y-8'
                             }`}>
-                            <img src="/java.svg" className="icon-image"/>
+                            <img src={`${process.env.PUBLIC_URL}/java.svg`} className="icon-image"/>
                             <p className="icon-label">JAVA</p>
                         </div>
 
@@ -150,20 +150,20 @@ export default function AboutMe(){
                         <div className={`icon-container ${
                                 isVisible ? 'transform transition-all duration-700 ease-in delay-[800ms]' : 'opacity-0 translate-y-8'
                             }`}>
-                                <img src="/react.svg" className="icon-image" alt="React" />
+                                <img src={`${process.env.PUBLIC_URL}/react.svg`} className="icon-image" alt="React" />
                                 <p className="icon-label">REACT</p>
                             </div>
                         <div className={`icon-container ${
                                 isVisible ? 'transform transition-all duration-700 ease-in delay-[1000ms]' : 'opacity-0 translate-y-8'
                             }`}>
-                            <img src="/postgresql.svg" className="icon-image"/>
+                            <img src={`${process.env.PUBLIC_URL}/postgresql.svg`} className="icon-image"/>
                             <p className="icon-label">POSTGRESQL</p>
                         </div>
 
                         <div className={`icon-container ${
                                 isVisible ? 'transform transition-all duration-700 ease-in delay-[1200ms]' : 'opacity-0 translate-y-8'
                             }`}>
-                            <img src="/datadog.svg" className="icon-image"/>
+                            <img src={`${process.env.PUBLIC_URL}/datadog.svg`} className="icon-image"/>
                             <p className="icon-label">DATADOG</p>
                         </div>
                        

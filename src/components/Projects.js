@@ -57,7 +57,7 @@ export default function Projects(){
 
                     
                     <div className="group relative w-full">
-                        <img className="project-img rounded-t-xl w-full hover:pointer" src="/travelgram.jpeg" alt="travelgram" />
+                        <img className="project-img rounded-t-xl w-full hover:pointer" src={`${process.env.PUBLIC_URL}/travelgram.jpeg`} alt="travelgram" />
 
                         
                         <div className="absolute inset-0 text-slate-300 flex flex-col items-center justify-center gap-4 px-4 
@@ -68,12 +68,12 @@ export default function Projects(){
                                 }}>
                             <a href="https://travelgram-app-0bcf3d977e1b.herokuapp.com/home" target="_blank" rel="noopener noreferrer" className="text-lg">
                                 Live App
-                                <img src="/open.svg" alt="Open" className="w-4 h-4 inline ml-1" />
+                                <img src={`${process.env.PUBLIC_URL}/open.svg`} alt="Open" className="w-4 h-4 inline ml-1" />
 
                             </a>
                             <a href="https://github.com/chaseblodgett/travelgram" target="_blank" rel="noopener noreferrer" className="text-lg">
                                 Source Code
-                                <img src="/open.svg" alt="Open" className="w-4 h-4 inline ml-1" />
+                                <img src={`${process.env.PUBLIC_URL}/open.svg`} alt="Open" className="w-4 h-4 inline ml-1" />
                             </a>
                         </div>
                     </div>
@@ -96,7 +96,7 @@ export default function Projects(){
 
                     
                     <div className="group relative w-full">
-                        <img className="project-img rounded-t-xl w-full hover:pointer" src="/transfermybib.jpeg" alt="transfermybib" />
+                        <img className="project-img rounded-t-xl w-full hover:pointer" src={`${process.env.PUBLIC_URL}/transfermybib.jpeg`} alt="transfermybib" />
 
                         
                         <div className="absolute inset-0 text-slate-300 flex flex-col items-center justify-center gap-4 px-4 
@@ -107,12 +107,12 @@ export default function Projects(){
                                 }}>
                             <a href="https://transfermybib-b27aa46b536b.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="text-lg">
                                 Live App
-                                <img src="/open.svg" alt="Open" className="w-4 h-4 inline ml-1" />
+                                <img src={`${process.env.PUBLIC_URL}/open.svg`} alt="Open" className="w-4 h-4 inline ml-1" />
 
                             </a>
                             <a href="https://github.com/chaseblodgett/transfermybib" target="_blank" rel="noopener noreferrer" className="text-lg">
                                 Source Code
-                                <img src="/open.svg" alt="Open" className="w-4 h-4 inline ml-1" />
+                                <img src={`${process.env.PUBLIC_URL}/open.svg`} alt="Open" className="w-4 h-4 inline ml-1" />
                             </a>
                         </div>
                     </div>
@@ -134,7 +134,7 @@ export default function Projects(){
 
                     
                     <div className="group relative w-full">
-                        <img className="project-img rounded-t-xl w-full hover:pointer" src="/checkers.jpg" alt="checkers" />
+                        <img className="project-img rounded-t-xl w-full hover:pointer" src={`${process.env.PUBLIC_URL}/checkers.jpg`} alt="checkers" />
 
                         
                         <div className="absolute inset-0 text-slate-300 flex flex-col items-center justify-center gap-4 px-4 
@@ -146,7 +146,7 @@ export default function Projects(){
                             
                             <a href="https://github.com/chaseblodgett/checkers_bot" target="_blank" rel="noopener noreferrer" className="text-lg">
                                 Source Code
-                                <img src="/open.svg" alt="Open" className="w-4 h-4 inline ml-1" />
+                                <img src={`${process.env.PUBLIC_URL}/open.svg`} alt="Open" className="w-4 h-4 inline ml-1" />
                             </a>
                         </div>
                     </div>

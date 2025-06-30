@@ -224,7 +224,7 @@ function App() {
             className="flex items-center justify-center w-12 h-12 rounded-full hover:scale-110 transition-colors duration-300"
             aria-label="Scroll to top"
           >
-            <img src="/arrow_up.svg" alt="Scroll to top" className="w-10 h-10 hover:scale-110" />
+            <img src={`${process.env.PUBLIC_URL}/arrow_up.svg`} alt="Scroll to top" className="w-10 h-10 hover:scale-110" />
           </button>
         </div>
 
