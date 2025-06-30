@@ -134,7 +134,7 @@ export default function AboutMe(){
                         <div className={`icon-container ${
                                 isVisible ? 'transform transition-all duration-700 ease-in delay-[1200ms]' : 'opacity-0 translate-y-8'
                             }`}>
-                            <img src="/mongodb.svg" className="icon-image"/>
+                            <img src="/chaseblodgett/mongodb.svg" className="icon-image"/>
                             <p>MONGODB</p>
                         </div>
                         
