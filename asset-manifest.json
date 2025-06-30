@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.944d9251.css",
-    "main.js": "/static/js/main.5f5bc9c4.js",
-    "static/js/453.438d9e50.chunk.js": "/static/js/453.438d9e50.chunk.js",
-    "index.html": "/index.html",
-    "main.944d9251.css.map": "/static/css/main.944d9251.css.map",
-    "main.5f5bc9c4.js.map": "/static/js/main.5f5bc9c4.js.map",
-    "453.438d9e50.chunk.js.map": "/static/js/453.438d9e50.chunk.js.map"
+    "main.css": "/chaseblodgett/static/css/main.944d9251.css",
+    "main.js": "/chaseblodgett/static/js/main.7e6d3c9d.js",
+    "static/js/453.438d9e50.chunk.js": "/chaseblodgett/static/js/453.438d9e50.chunk.js",
+    "index.html": "/chaseblodgett/index.html",
+    "main.944d9251.css.map": "/chaseblodgett/static/css/main.944d9251.css.map",
+    "main.7e6d3c9d.js.map": "/chaseblodgett/static/js/main.7e6d3c9d.js.map",
+    "453.438d9e50.chunk.js.map": "/chaseblodgett/static/js/453.438d9e50.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.944d9251.css",
-    "static/js/main.5f5bc9c4.js"
+    "static/js/main.7e6d3c9d.js"
   ]
 }
