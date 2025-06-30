@@ -7,18 +7,22 @@ export default function AboutMe(){
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
-        const observer = new IntersectionObserver(([entry]) => {
-          setIsVisible(entry.isIntersecting); 
-        }, {
-          threshold: 0.5
-        });
-      
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+            if (entry.isIntersecting && !isVisible) {
+                setIsVisible(true);
+                if (ref.current) observer.unobserve(ref.current);
+            }
+            },
+            { threshold: 0.5 }
+        );
+
         if (ref.current) observer.observe(ref.current);
-      
+
         return () => {
-          if (ref.current) observer.unobserve(ref.current); 
+            if (ref.current) observer.unobserve(ref.current);
         };
-      }, []);
+    }, [isVisible]);
 
 
     return(
@@ -40,7 +44,7 @@ export default function AboutMe(){
                     
                     <img src="/person.svg" className="person-svg"/>
                     
-                    <p className="px-2 sm:px-4 md:px-8 lg:px-12 text-left text-md md:text-xl xl:px-20 2xl:px-40">
+                    <p className="px-2 sm:px-4 md:px-8 lg:px-12 text-left text-md md:text-xl xl:px-20 2xl:px-40 text-slate-300">
                         Hello! My name is Chase, and I recently graduated from the University of Minnesota–Twin Cities with a degree in Computer Science. 
                         I’m really into building things with code, learning new tech, and working on fun projects that actually make a difference. 
                         When I’m not at my computer, I like to stay active — running, hiking, camping, or getting a good game of basketball in with friends. 

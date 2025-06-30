@@ -5,7 +5,7 @@ export default function TypingIntro() {
 
 
     return (
-        <span className="w-full text-2xl sm:text-3xl md:text-5xl animate-slide-in-right delay-300 font-space">
+        <span className="w-full text-2xl sm:text-3xl md:text-5xl animate-slide-in-right delay-[500ms] font-space">
           I'm a
           <TypeAnimation
             sequence={[

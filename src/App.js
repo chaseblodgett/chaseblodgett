@@ -10,10 +10,30 @@ function App() {
   const aboutMe = useRef(null);
   const experience = useRef(null);
   const projects = useRef(null);
-  const [currentSection, setCurrentSection] = useState("");
+  const home = useRef(null);
+  const [activeSection, setActiveSection] = useState('');
   const [showNav, setShowNav] = useState(false);
 
   useEffect( () => {
+    const options = {
+      root: null,
+      threshold: 0.6,
+    };
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    }, options);
+  
+    const sections = [aboutMe.current, experience.current, projects.current];
+  
+    sections.forEach(section => {
+      if (section) observer.observe(section);
+    });
+
     const handleScroll = () => {
       setShowNav(window.scrollY > window.innerHeight- 50);
     };
@@ -22,6 +42,9 @@ function App() {
   
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      sections.forEach(section => {
+        if (section) observer.unobserve(section);
+      });
     };
 
   },[]);
@@ -44,11 +67,40 @@ function App() {
       <ParticlesBackground />
 
       {showNav && (
-      <nav className="fixed top-0 left-0 w-full bg-[#0a0f1a]/80 backdrop-blur-sm py-4 px-8 shadow-md z-50">
+      <nav className="fixed top-0 left-0 w-full bg-[#0a0f1a]/80 backdrop-blur-sm py-4 px-8 shadow-md z-50 text-slate-300">
         <ul className="flex space-x-3 md:space-x-4 text-sm sm:text-md md:text-lg font-semibold justify-end">
-          <li className="cursor-pointer hover:text-pink-500" onClick={() => scrollToSection(aboutMe)}>About</li>
-          <li className="cursor-pointer hover:text-pink-500" onClick={() => scrollToSection(experience)}>Experience</li>
-          <li className="cursor-pointer hover:text-pink-500" onClick={() => scrollToSection(projects)}>Projects</li>
+          <li
+            className={`relative cursor-pointer transition-colors duration-300 text-sm sm:text-base
+              ${activeSection === 'about' ? 'text-pink-500' : 'text-slate-300'}`}
+            onClick={() => scrollToSection(aboutMe)}
+          >
+            <span className="after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-pink-500 after:transition-all after:duration-300 hover:after:w-full">
+              About
+            </span>
+          </li>
+
+
+          <li
+            className={`relative cursor-pointer transition-colors duration-300 text-sm sm:text-base
+              ${activeSection === 'experience' ? 'text-pink-500' : 'text-slate-300'}`}
+            onClick={() => scrollToSection(experience)}
+          >
+            <span className="after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-pink-500 after:transition-all after:duration-300 hover:after:w-full">
+              Experience
+            </span>
+          </li>
+
+          <li
+            className={`relative cursor-pointer transition-colors duration-300 text-sm sm:text-base
+              ${activeSection === 'projects' ? 'text-pink-500' : 'text-slate-300'}`}
+            onClick={() => scrollToSection(projects)}
+          >
+            <span className="after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-pink-500 after:transition-all after:duration-300 hover:after:w-full">
+              Projects
+            </span>
+          </li>
+
+
           <li className="cursor-pointer group">
             <a
               href="https://www.linkedin.com/in/chase-blodgett/"
@@ -108,7 +160,9 @@ function App() {
       </nav>
     )}
 
-      <section className="relative flex flex-col-reverse md:flex-row items-center justify-center min-h-screen px-6 md:px-16 py-24 space-y-12 md:space-y-0 md:space-x-16">
+      <section 
+        ref={home}
+        className="relative flex flex-col-reverse md:flex-row items-center justify-center min-h-screen px-6 md:px-16 py-24 space-y-12 md:space-y-0 md:space-x-16">
         <div className="w-full flex flex-col space-y-6 text-center justify-center ">
           <h1 className="w-full text-3xl sm:text-4xl md:text-6xl animate-slide-in-left delay-300">
             Hey, I'm <span className="text-pink-500">Chase.</span>
@@ -128,6 +182,7 @@ function App() {
 
      
       <section
+        id="about"
         ref={aboutMe}
         className="relative clip-pentagon min-h-[calc(100vh+20rem)] mb-[-16]  px-6 py-24"
         style={{
@@ -140,6 +195,7 @@ function App() {
 
 
       <section
+        id="experience"
         ref={experience}
         className="relative clip-pentagon min-h-[calc(100vh+20rem)] -mt-48 px-6 py-24"
         style={{
@@ -151,14 +207,27 @@ function App() {
       </section>
 
       <section
+        id="projects"
         ref={projects}
-        className="relative clip-pentagon min-h-[calc(100vh+20rem)] -mt-48 px-6 py-24"
+        className="relative clip-pentagon min-h-[calc(100vh+12rem)] -mt-48 px-6 py-24"
         style={{
-          backgroundImage: 'linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(17,24,39,0.7), rgba(23,37,84,0.7))',
+          backgroundImage:
+            'linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(17,24,39,0.7), rgba(23,37,84,0.7))',
           backgroundBlendMode: 'overlay',
         }}
       >
-        <Projects/>
+        <Projects />
+
+        <div className="w-full flex justify-center mt-10">
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="flex items-center justify-center w-12 h-12 rounded-full hover:scale-110 transition-colors duration-300"
+            aria-label="Scroll to top"
+          >
+            <img src="/arrow_up.svg" alt="Scroll to top" className="w-10 h-10 hover:scale-110" />
+          </button>
+        </div>
+
       </section>
 
     </div>

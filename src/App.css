@@ -24,22 +24,14 @@
 .clip-pentagon {
   clip-path: polygon(
     60% 0%,   /* top center tip */
-    100% 15%, /* top right corner */
+    100% 10%, /* top right corner */
     100% 100%,/* bottom right corner */
     0% 100%,  /* bottom left corner */
-    0% 15%    /* top left corner */
+    0% 10%    /* top left corner */
   );
   position: relative;
   
 }
-
-/* .clip-pentagon::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: transparent;
-  z-index: -1;
-} */
 
 
 .underline-behind {
@@ -77,14 +69,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.4rem; 
+  gap: 0.4rem;
   margin: 0;
   padding: 0.5em;
   width: 8em;
   height: 6em;
-  border: 2px solid rgba(168, 85, 247, 0.5);;
+  border: 2px solid rgba(168, 85, 247, 0.5);
   border-radius: 16px;
 }
+
 
 .icon-label {
   text-align: center;
@@ -110,6 +103,10 @@
 
 .experience-details{
   padding-top: 3em;
+}
+
+.project-img{
+  height:15em;
 }
 
 @media (max-width: 640px) {
@@ -141,9 +138,42 @@
   .person-svg{
     height: 9em;
   }
+
+  .project-img {
+    height: 15em;
+  }
+
+  .clip-pentagon {
+    clip-path: polygon(
+      60% 0%,   /* top center tip */
+      100% 8%, /* top right corner */
+      100% 100%,/* bottom right corner */
+      0% 100%,  /* bottom left corner */
+      0% 8%    /* top left corner */
+    );
+    position: relative;
+    
+  }
 }
 
 @media (max-width: 450px) {
+
+  .clip-pentagon {
+    clip-path: polygon(
+      60% 0%,   /* top center tip */
+      100% 5%, /* top right corner */
+      100% 100%,/* bottom right corner */
+      0% 100%,  /* bottom left corner */
+      0% 5%    /* top left corner */
+    );
+    position: relative;
+    
+  }
+
+  .project-img {
+    height: 13em;
+  }
+
   .skills-icons {
     gap: 0.4em;
   }
@@ -177,6 +207,10 @@
 @media (min-width: 1600px) {
   .skills-icons {
     gap: 0.5em;
+  }
+
+  .project-img {
+    height: 25em;
   }
 
   .work-logo{
