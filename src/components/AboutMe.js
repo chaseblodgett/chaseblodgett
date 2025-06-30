@@ -40,7 +40,7 @@ export default function AboutMe(){
                     
                     <img src="/person.svg" className="person-svg"/>
                     
-                    <p className="px-12 text-left text-md md:text-xl">
+                    <p className="px-2 sm:px-4 md:px-8 lg:px-12 text-left text-md md:text-xl xl:px-20 2xl:px-40">
                         Hello! My name is Chase, and I recently graduated from the University of Minnesota–Twin Cities with a degree in Computer Science. 
                         I’m really into building things with code, learning new tech, and working on fun projects that actually make a difference. 
                         When I’m not at my computer, I like to stay active — running, hiking, camping, or getting a good game of basketball in with friends. 

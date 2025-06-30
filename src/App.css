@@ -30,6 +30,7 @@
     0% 15%    /* top left corner */
   );
   position: relative;
+  
 }
 
 /* .clip-pentagon::before {
@@ -102,9 +103,23 @@
   height: 12em;
 }
 
+.work-logo{
+  height: 4em;
+  width: 4em;
+}
+
+.experience-details{
+  padding-top: 3em;
+}
+
 @media (max-width: 640px) {
   .skills-icons {
     gap: 0.5em;
+  }
+
+  .work-logo{
+    height: 3.5em;
+    width: 3.5em;
   }
 
   .icon-container {
@@ -133,6 +148,11 @@
     gap: 0.4em;
   }
 
+  .work-logo{
+    height: 3em;
+    width: 3em;
+  }
+
   .icon-container {
     padding: 0.2em;
     gap: 0.2rem;
@@ -157,6 +177,11 @@
 @media (min-width: 1600px) {
   .skills-icons {
     gap: 0.5em;
+  }
+
+  .work-logo{
+    height: 5em;
+    width: 5em;
   }
 
   .icon-container {

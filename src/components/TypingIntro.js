@@ -5,15 +5,13 @@ export default function TypingIntro() {
 
 
     return (
-        <span className="animate-slide-in-right delay-300" style={{ fontSize: '2em' }}>
+        <span className="w-full text-2xl sm:text-3xl md:text-5xl animate-slide-in-right delay-300 font-space">
           I'm a
           <TypeAnimation
             sequence={[
               " coding enthusiast.",
               1000,
               " web developer.",
-              1000,
-              " problem solver.",
               1000,
               " software engineer.",
               1000,
