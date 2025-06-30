@@ -96,14 +96,14 @@ export default function AboutMe(){
                         <div  className={`icon-container ${
                                 isVisible ? 'transform transition-all duration-700 ease-in delay-[1000ms]' : 'opacity-0 translate-y-8'
                             }`}>
-                            <img src={`${process.env.PUBLIC_URL}/python.svg`} className="icon-image"/>
+                            <img src={`${process.env.PUBLIC_URL}/Python.svg`} className="icon-image"/>
                             <p className="icon-label">PYTHON</p>
                         </div>
 
                         <div className={`icon-container ${
                                 isVisible ? 'transform transition-all duration-700 ease-in delay-[1200ms]' : 'opacity-0 translate-y-8'
                             }`}>
-                            <img ssrc={`${process.env.PUBLIC_URL}/git.svg`} className="icon-image"/>
+                            <img src={`${process.env.PUBLIC_URL}/git.svg`} className="icon-image"/>
                             <p className="icon-label">GIT</p>
                         </div>
 

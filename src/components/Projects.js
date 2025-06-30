@@ -81,7 +81,7 @@ export default function Projects(){
                     <h2 className="w-fit mx-auto text-center text-lg sm:text-xl md:text-2xl lg:text-3xl pt-2 underline-behind font-semibold">
                         Travelgram
                     </h2>
-                    <p className="py-4 px-4 text-left text-xs sm:text-sm md:text-md">
+                    <p className="py-4 px-4 text-left text-xs sm:text-sm md:text-md xl:text-lg">
                         Travelgram is a full-stack social media app for travelers to share their trips, connect with friends, and explore new destinations. 
                         It features user authentication, photo uploads via Cloudinary, and real-time messaging using Socket.io. 
                         Utilizes the Google Maps API for interactive trip visualization, and features like a bucket list, friend system, and trip sharing to enhance the social experience.
@@ -120,7 +120,7 @@ export default function Projects(){
                     <h2 className="w-fit mx-auto text-center text-lg sm:text-xl md:text-2xl lg:text-3xl pt-2 underline-behind font-semibold">
                         TransferMyBib
                     </h2>
-                    <p className="py-4 px-4 text-left text-xs sm:text-sm md:text-md">
+                    <p className="py-4 px-4 text-left text-xs sm:text-sm md:text-md xl:text-lg">
                         A full-stack marketplace and forum designed to facilitate buying and selling race bibs for over 100 US-based road races. 
                         The platform supports user account management, threaded posts, comments, and community discussions.
                     </p>
@@ -154,7 +154,7 @@ export default function Projects(){
                     <h2 className="w-fit mx-auto text-center text-lg sm:text-xl md:text-2xl lg:text-3xl pt-2 underline-behind font-semibold">
                         Checkers AI Bot
                     </h2>
-                    <p className="py-4 px-4 text-left text-xs sm:text-sm md:text-md">
+                    <p className="py-4 px-4 text-left text-xs sm:text-sm md:text-md xl:text-lg">
                         An AI-driven checkers bot leveraging the game theory alpha-beta pruning algorithm paired with multiple heuristics for board state evaluation. 
                         Features include a user vs. AI GUI with adjustable difficulty levels and AI tournaments to benchmark heuristic performance. 
                         Performance analysis was conducted using metrics such as win rates, average moves, and thinking time per move.
