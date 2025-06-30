@@ -134,14 +134,14 @@ export default function AboutMe(){
                         <div className={`icon-container ${
                                 isVisible ? 'transform transition-all duration-700 ease-in delay-[1200ms]' : 'opacity-0 translate-y-8'
                             }`}>
-                            <img src="/chaseblodgett/mongodb.svg" className="icon-image"/>
+                            <img src={`${process.env.PUBLIC_URL}/mongodb.svg`} className="icon-image"/>
                             <p>MONGODB</p>
                         </div>
                         
                         <div className={`icon-container ${
                                 isVisible ? 'transform transition-all duration-700 ease-in delay-[1400ms]' : 'opacity-0 translate-y-8'
                             }`}>
-                            <img src="/nodejs.svg" className="icon-image"/>
+                            <img src={`${process.env.PUBLIC_URL}/nodejs.svg`} className="icon-image"/>
                             <p className="icon-label">NODEJS</p>
                         </div>
                     </div>
