@@ -80,7 +80,7 @@ export default function Experience(){
                 </div>
               </div>
       
-              <p className="text-xs md:text-sm text-slate-400 whitespace-nowrap">Jan 2024 – Jan 2025</p>
+              <p className="text-xs md:text-sm text-slate-400 whitespace-nowrap">Sept 2023 – May 2024</p>
             </div>
       
             <div className="text-left text-xs sm:text-sm md:text-lg px-2 sm:px-12 md:px-24 lg:px-32 mt-4 text-slate-300 font-rubik">

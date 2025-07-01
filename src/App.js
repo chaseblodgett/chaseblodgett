@@ -37,7 +37,7 @@ function App() {
     });
 
     const handleScroll = () => {
-      setShowNav(window.scrollY > window.innerHeight- 50);
+      setShowNav(window.scrollY > window.innerHeight-150);
     };
   
     window.addEventListener("scroll", handleScroll);
@@ -53,7 +53,7 @@ function App() {
 
   const scrollToSection = (ref) => {
     window.scrollTo({
-      top: ref.current.offsetTop + 105,
+      top: ref.current.offsetTop,
       behavior: 'smooth',
     });
   
@@ -196,7 +196,7 @@ function App() {
       <section
         id="about"
         ref={aboutMe}
-        className="relative clip-pentagon px-6 pt-20 pb-0"
+        className="relative clip-pentagon px-6"
       >
         <AboutMe />
       </section>
@@ -204,7 +204,7 @@ function App() {
       <section
         id="experience"
         ref={experience}
-        className="relative clip-pentagon px-6 pt-20"
+        className="relative clip-pentagon px-6"
       >
         <Experience/>
       </section>
@@ -212,7 +212,7 @@ function App() {
       <section
         id="projects"
         ref={projects}
-        className="relative clip-pentagon px-6 pt-20"
+        className="relative clip-pentagon px-6 "
       >
         <Projects />
 
@@ -221,7 +221,7 @@ function App() {
       <section
         id="contact"
         ref={contact}
-        className="relative clip-pentagon px-6 pt-20"
+        className="relative clip-pentagon px-6 "
       >
         <Contact />
 

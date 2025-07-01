@@ -71,7 +71,7 @@ export default function ParticlesBackground() {
             speed: 0.5,
           },
           number: {
-            value: 100,
+            value: 125,
           },
           size: {
             value: { min: 1, max: 3 },

@@ -35,7 +35,7 @@ export default function AboutMe(){
                 About
             </h1>
                 
-            <div className="flex flex-col lg:flex-row md:gap-16">
+            <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 2xl:gap-10">
                 <div
                     className={`flex flex-col justify-start transform transition-all duration-700 ease-out w-full max-w-5xl mx-auto ${
                         isVisible ? 'animate-slide-in-left delay-200' : 'opacity-0 translate-y-8'
@@ -44,13 +44,16 @@ export default function AboutMe(){
                     
                     <img src={`${process.env.PUBLIC_URL}/person.svg`} className="person-svg"/>
                     
-                    <p className="px-2 sm:px-4 md:px-8 lg:px-12 text-left text-md md:text-xl xl:px-20 2xl:px-40 text-slate-300">
+                    <p className="px-1 sm:px-2 md:px-6 lg:px-10 text-left text-sm md:text-lg 2xl:text-xl xl:px-20 2xl:px-40 text-slate-300">
                         Hello! My name is Chase, and I recently graduated from the University of Minnesota–Twin Cities with a degree in Computer Science. 
-                        I’m really into building things with code, learning new tech, and working on fun projects that actually make a difference. 
-                        When I’m not at my computer, I like to stay active — running, hiking, camping, or getting a good game of basketball in with friends. 
-                        I'm currently on the job hunt for a full-time software engineering position and would love to connect with you and discuss any opportunities. 
-                        I'm always looking to meet new people, so please don't hesitate to reach out!
-                    </p>
+                        I really enjoy building things with code, learning new tech, and working on fun projects in my free time. 
+                        I have a strong background working with Python, C, Java, and JavaScript, and I’ve built projects in each — from fun simple programs to full-stack web apps. 
+                        Lately, I’ve been working a lot with React.js, Express.js, and Node.js, and I really enjoy the creativity and problem-solving nature that comes with web development.
+                        Outside of tech, I like to stay active — running, hiking, camping, or getting a game of basketball in with friends whenever I can. 
+                        Right now, I’m actively looking for a full-time software engineering role. 
+                        I’d love to connect if you’re hiring or just want to chat. 
+                        Always happy to meet new people, so don’t hesitate to reach out!
+                    </p> 
 
 
                 </div>

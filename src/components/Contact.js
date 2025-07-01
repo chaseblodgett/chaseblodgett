@@ -33,7 +33,7 @@ export default function Contact() {
 
         <div 
             ref={ref}
-            className="flex flex-col items-center justify-center gap-6 pt-16 md:flex-row md:items-stretch w-full px-0 sm:px-4 md:px-12 lg:px-20 font-rubik">
+            className="flex flex-col items-center justify-center gap-6 pt-12 md:pt-16 lg:pt-24 md:flex-row md:items-stretch w-full px-0 sm:px-4 md:px-12 lg:px-20 font-rubik">
             <div
                 className={`bg-slate-800/60 border border-purple-500/40 rounded-2xl shadow-xl p-8 w-full max-w-lg transition-all duration-700 ${
                 isVisible ? 'transform transition-all duration-700 ease-in delay-[850ms]' : 'opacity-0 translate-y-6'
