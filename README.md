@@ -1,6 +1,6 @@
-# Hi there 👋 this is Chase! Welcome to my portfolio!
+# Hi there 👋 this is Chase!
 
-Hey, I’m Chase — I love building cool things on the web, figuring out how stuff works, and turning ideas into interactive experiences. I’m always learning, always curious, and always coding.
+Hey, I’m Chase — I like building cool things on the web, learning new stuff, and turning ideas into full projects. I’m always learning, always curious, and always coding.
 
 ---
 
