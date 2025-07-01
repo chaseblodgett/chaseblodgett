@@ -4,12 +4,14 @@ import TypingIntro from './components/TypingIntro';
 import AboutMe from './components/AboutMe';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
+import Contact from './components/Contact'
 import { useRef, useState, useEffect } from 'react';
 
 function App() {
   const aboutMe = useRef(null);
   const experience = useRef(null);
   const projects = useRef(null);
+  const contact = useRef(null);
   const home = useRef(null);
   const [activeSection, setActiveSection] = useState('');
   const [showNav, setShowNav] = useState(false);
@@ -28,7 +30,7 @@ function App() {
       });
     }, options);
   
-    const sections = [aboutMe.current, experience.current, projects.current];
+    const sections = [aboutMe.current, experience.current, projects.current, contact.current];
   
     sections.forEach(section => {
       if (section) observer.observe(section);
@@ -62,12 +64,12 @@ function App() {
   
 
   return (
-    <div className="relative overflow-auto text-white bg-gradient-to-br from-black via-gray-900 to-blue-950 z-[10] font-space">
+    <div className="relative overflow-auto text-white bg-gradient-to-br from-black via-gray-900 to-gray-950 z-[10] font-space">
 
       <ParticlesBackground />
 
       {showNav && (
-      <nav className="fixed top-0 left-0 w-full bg-[#0a0f1a]/80 backdrop-blur-sm py-4 px-8 shadow-md z-50 text-slate-300">
+      <nav className="fixed top-0 left-0 w-full bg-[#1a2233]/70 backdrop-blur-sm py-4 px-8 shadow-md z-50 text-slate-300">
         <ul className="flex space-x-3 md:space-x-4 text-sm sm:text-md md:text-lg font-semibold justify-end">
           <li
             className={`relative cursor-pointer transition-colors duration-300 text-sm sm:text-base
@@ -97,6 +99,16 @@ function App() {
           >
             <span className="after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-pink-500 after:transition-all after:duration-300 hover:after:w-full">
               Projects
+            </span>
+          </li>
+
+          <li
+            className={`relative cursor-pointer transition-colors duration-300 text-sm sm:text-base
+              ${activeSection === 'contact' ? 'text-pink-500' : 'text-slate-300'}`}
+            onClick={() => scrollToSection(contact)}
+          >
+            <span className="after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-pink-500 after:transition-all after:duration-300 hover:after:w-full">
+              Contact
             </span>
           </li>
 
@@ -184,24 +196,15 @@ function App() {
       <section
         id="about"
         ref={aboutMe}
-        className="relative clip-pentagon min-h-[calc(100vh+20rem)] mb-[-16]  px-6 py-24"
-        style={{
-          backgroundImage: 'linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(17,24,39,0.7), rgba(23,37,84,0.7))',
-          backgroundBlendMode: 'overlay',
-        }}
+        className="relative clip-pentagon px-6 pt-20 pb-0"
       >
         <AboutMe />
       </section>
 
-
       <section
         id="experience"
         ref={experience}
-        className="relative clip-pentagon min-h-[calc(100vh+20rem)] -mt-48 px-6 py-24"
-        style={{
-          backgroundImage: 'linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(17,24,39,0.7), rgba(23,37,84,0.7))',
-          backgroundBlendMode: 'overlay',
-        }}
+        className="relative clip-pentagon px-6 pt-20"
       >
         <Experience/>
       </section>
@@ -209,16 +212,20 @@ function App() {
       <section
         id="projects"
         ref={projects}
-        className="relative clip-pentagon min-h-[calc(100vh+12rem)] -mt-48 px-6 py-24"
-        style={{
-          backgroundImage:
-            'linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(17,24,39,0.7), rgba(23,37,84,0.7))',
-          backgroundBlendMode: 'overlay',
-        }}
+        className="relative clip-pentagon px-6 pt-20"
       >
         <Projects />
 
-        <div className="w-full flex justify-center mt-10">
+      </section>
+
+      <section
+        id="contact"
+        ref={contact}
+        className="relative clip-pentagon px-6 pt-20"
+      >
+        <Contact />
+
+        <div className="w-full flex justify-center">
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="flex items-center justify-center w-12 h-12 rounded-full hover:scale-110 transition-colors duration-300"

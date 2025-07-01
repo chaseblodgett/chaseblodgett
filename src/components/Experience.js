@@ -64,7 +64,7 @@ export default function Experience(){
             </div>
           </div>
 
-          <div className={`flex flex-col justify-start pt-12 ${
+          <div className={`flex flex-col justify-start pt-12  ${
                                 isVisible ? 'transform transition-all duration-700 ease-in delay-[400ms]' : 'opacity-0 translate-y-6'
                             }`}>
             <div className="flex justify-between items-start gap-2 md:gap-6 w-full px-2 sm:px-12 md:px-24 lg:px-32 text-xs sm:text-sm md:text-lg">

@@ -21,7 +21,7 @@ export default function Projects(){
               }
             });
           },
-          { threshold: 0.5 }
+          { threshold: 0.2 }
         );
       
         if (headerRef.current) observer.observe(headerRef.current);
@@ -41,7 +41,7 @@ export default function Projects(){
             <h1 
             ref={headerRef}
             className={`text-5xl md:text-6xl font-bold text-slate-300 px-4 pt-24 pb-2 underline-behind ${
-                        headIsVisible ? 'animate-slide-in-right delay-200' : 'opacity-0 translate-x-8'
+                        headIsVisible ? 'animate-slide-in-right delay-[500ms' : 'opacity-0 translate-x-8'
                     }`}>
                 Projects
             </h1>
@@ -52,7 +52,7 @@ export default function Projects(){
 
                 <div
                 className={`flex flex-col border-2 border-purple-500/50 rounded-xl md:w-1/3 overflow-hidden transition-all duration-700 ${
-                    bodyIsVisible ? 'transform transition-all duration-700 ease-in delay-[500ms]' : 'opacity-0 translate-y-6'
+                    bodyIsVisible ? 'transform transition-all duration-700 ease-in delay-[700ms]' : 'opacity-0 translate-y-6'
                 }`}>
 
                     
@@ -78,20 +78,23 @@ export default function Projects(){
                         </div>
                     </div>
 
-                    <h2 className="w-fit mx-auto text-center text-lg sm:text-xl md:text-2xl lg:text-3xl pt-2 underline-behind font-semibold">
-                        Travelgram
-                    </h2>
-                    <p className="py-4 px-4 text-left text-xs sm:text-sm md:text-md 2xl:text-lg">
-                        Travelgram is a full-stack social media app for travelers to share their trips, connect with friends, and explore new destinations. 
-                        It features user authentication, photo uploads via Cloudinary, and real-time messaging using Socket.io. 
-                        Utilizes the Google Maps API for interactive trip visualization, and features like a bucket list, friend system, and trip sharing to enhance the social experience.
-                    </p>
+                    <div className="bg-slate-800/60 rounded-lg max-w-4xl mx-auto">
+                        <h2 className="w-fit mx-auto text-center text-lg sm:text-xl md:text-2xl lg:text-3xl pt-2 underline-behind font-semibold">
+                            Travelgram
+                        </h2>
+                        <p className="py-4 px-4 text-left text-xs sm:text-sm md:text-md 2xl:text-lg">
+                            Travelgram is a full-stack social media app for travelers to share their trips, connect with friends, and explore new destinations. 
+                            It features user authentication, photo uploads via Cloudinary, and real-time messaging using Socket.io. 
+                            Utilizes the Google Maps API for interactive trip visualization, and features like a bucket list, friend system, and trip sharing to enhance the social experience.
+                        </p>
+                    </div>
+
                 </div>
 
 
                 <div
                 className={`flex flex-col border-2 border-purple-500/50 rounded-xl md:w-1/3 overflow-hidden transition-all duration-700 ${
-                    bodyIsVisible ? 'transform transition-all duration-700 ease-in delay-[650ms]' : 'opacity-0 translate-y-6'
+                    bodyIsVisible ? 'transform transition-all duration-700 ease-in delay-[850ms]' : 'opacity-0 translate-y-6'
                 }`}>
 
                     
@@ -117,19 +120,21 @@ export default function Projects(){
                         </div>
                     </div>
 
-                    <h2 className="w-fit mx-auto text-center text-lg sm:text-xl md:text-2xl lg:text-3xl pt-2 underline-behind font-semibold">
-                        TransferMyBib
-                    </h2>
-                    <p className="py-4 px-4 text-left text-xs sm:text-sm md:text-md 2xl:text-lg">
-                        A full-stack marketplace and forum designed to facilitate buying and selling race bibs for over 100 US-based road races. 
-                        The platform supports user account management, threaded posts, comments, and community discussions.
-                    </p>
+                    <div className="bg-slate-800/60 rounded-lg max-w-4xl mx-auto">
+                        <h2 className="w-fit mx-auto text-center text-lg sm:text-xl md:text-2xl lg:text-3xl pt-2 underline-behind font-semibold">
+                            TransferMyBib
+                        </h2>
+                        <p className="py-4 px-4 text-left text-xs sm:text-sm md:text-md 2xl:text-lg">
+                            A full-stack marketplace and forum designed to facilitate buying and selling race bibs for over 100 US-based road races. 
+                            The platform supports user account management, threaded posts, comments, and community discussions.
+                        </p>
+                    </div>
                 </div>
 
 
                 <div
                 className={`flex flex-col border-2 border-purple-500/50 rounded-xl md:w-1/3 overflow-hidden transition-all duration-700 ${
-                    bodyIsVisible ? 'transform transition-all duration-700 ease-in delay-[800ms]' : 'opacity-0 translate-y-6'
+                    bodyIsVisible ? 'transform transition-all duration-700 ease-in delay-[1000ms]' : 'opacity-0 translate-y-6'
                 }`}>
 
                     
@@ -150,15 +155,17 @@ export default function Projects(){
                             </a>
                         </div>
                     </div>
-
-                    <h2 className="w-fit mx-auto text-center text-lg sm:text-xl md:text-2xl lg:text-3xl pt-2 underline-behind font-semibold">
-                        Checkers AI Bot
-                    </h2>
-                    <p className="py-4 px-4 text-left text-xs sm:text-sm md:text-md 2xl:text-lg">
-                        An AI-driven checkers bot leveraging the game theory alpha-beta pruning algorithm paired with multiple heuristics for board state evaluation. 
-                        Features include a user vs. AI GUI with adjustable difficulty levels and AI tournaments to benchmark heuristic performance. 
-                        Performance analysis was conducted using metrics such as win rates, average moves, and thinking time per move.
-                    </p>
+                    
+                    <div className="bg-slate-800/60 rounded-lg max-w-4xl mx-auto">
+                        <h2 className="w-fit mx-auto text-center text-lg sm:text-xl md:text-2xl lg:text-3xl pt-2 underline-behind font-semibold">
+                            Checkers AI Bot
+                        </h2>
+                        <p className="py-4 px-4 text-left text-xs sm:text-sm md:text-md 2xl:text-lg">
+                            An AI-driven checkers bot leveraging the game theory alpha-beta pruning algorithm paired with multiple heuristics for board state evaluation. 
+                            Features include a user vs. AI GUI with adjustable difficulty levels and AI tournaments to benchmark heuristic performance. 
+                            Performance analysis was conducted using metrics such as win rates, average moves, and thinking time per move.
+                        </p>
+                    </div>
                 </div>
 
             </div>

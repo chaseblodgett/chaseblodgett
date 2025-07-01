@@ -135,7 +135,7 @@ export default function AboutMe(){
                                 isVisible ? 'transform transition-all duration-700 ease-in delay-[1200ms]' : 'opacity-0 translate-y-8'
                             }`}>
                             <img src={`${process.env.PUBLIC_URL}/mongodb.svg`} className="icon-image"/>
-                            <p>MONGODB</p>
+                            <p className="icon-label">MONGODB</p>
                         </div>
                         
                         <div className={`icon-container ${

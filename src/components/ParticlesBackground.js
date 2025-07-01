@@ -36,7 +36,7 @@ export default function ParticlesBackground() {
                   value: [ "#818cf8", "#a855f7", "#ec4899" ],
                 },
                 opacity: {
-                  value: 1,
+                  value: 0.2,
                   animation: {
                     enable: true,
                     speed: 5,
@@ -71,7 +71,7 @@ export default function ParticlesBackground() {
             speed: 0.5,
           },
           number: {
-            value: 150,
+            value: 100,
           },
           size: {
             value: { min: 1, max: 3 },
