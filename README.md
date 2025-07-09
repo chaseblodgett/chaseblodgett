@@ -2,6 +2,8 @@
 
 Hey, I’m Chase — I like building cool things on the web, learning new stuff, and turning ideas into full projects. I’m always learning, always curious, and always coding.
 
+### 🔗 [Portfolio Website](https://chaseblodgett.github.io/chaseblodgett/)
+
 ---
 
 ## 💻 Skills
