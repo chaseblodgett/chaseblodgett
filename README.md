@@ -31,7 +31,3 @@ Git • GitHub • AWS • AzureDevOps • Jenkins • DataDog • Docker • Sp
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&style=for-the-badge)](https://linkedin.com/in/chase-blodgett/)  
 [![GitHub](https://img.shields.io/badge/GitHub-000?logo=github&style=for-the-badge)](https://github.com/chaseblodgett)  
 [![Email](https://img.shields.io/badge/Email-Red?logo=gmail&style=for-the-badge)](mailto:chaseblodgett241@gmail.com)
-
----
-
-Thanks for visiting! Check out the source code or explore the site ✨
