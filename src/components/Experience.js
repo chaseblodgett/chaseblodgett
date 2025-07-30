@@ -33,7 +33,33 @@ export default function Experience(){
                     }`}>
                 Experience
             </h1>
+          <div className={`flex flex-col justify-start pt-12 ${
+                                isVisible ? 'transform transition-all duration-700 ease-in delay-[400ms]' : 'opacity-0 translate-y-6'
+                            }`}>
+            <div className="flex justify-between items-start gap-2 md:gap-6 w-full px-2 sm:px-12 md:px-24 lg:px-32 text-xs sm:text-sm md:text-lg">
+             
+              <div className="flex items-start gap-2 md:gap-4">
+                <img
+                  src={`${process.env.PUBLIC_URL}/evadata.jpeg`}
+                  alt="Evadata"
+                  className="w-14 h-14 object-cover rounded-md shadow-sm work-logo"
+                />
+                <div className="text-left">
+                  <h2 className="text-sm sm:text-md md:text-lg font-semibold text-slate-100">Evadata</h2>
+                  <h4 className="text-xs sm:text-sm md:text-md text-slate-400">Software Engineer</h4>
+                </div>
+              </div>
       
+              <p className="text-xs md:text-sm text-slate-400 whitespace-nowrap">July 2025 – Present</p>
+            </div>
+      
+            <div className="text-left text-xs sm:text-sm md:text-lg px-2 sm:px-12 md:px-24 lg:px-32 mt-4 text-slate-300 font-rubik">
+                <p>
+                  Coming soon...
+                </p>
+            </div>
+          </div>
+
           <div className={`flex flex-col justify-start pt-12 ${
                                 isVisible ? 'transform transition-all duration-700 ease-in delay-[400ms]' : 'opacity-0 translate-y-6'
                             }`}>
