@@ -149,7 +149,7 @@ export default function Projects(){
                                 backgroundBlendMode: 'overlay',
                                 }}>
                             
-                            <a href="https://github.com/chaseblodgett/checkers_bot" target="_blank" rel="noopener noreferrer" className="text-lg">
+                            <a href="https://github.com/chaseblodgett/checkers_mobile" target="_blank" rel="noopener noreferrer" className="text-lg">
                                 Source Code
                                 <img src={`${process.env.PUBLIC_URL}/open.svg`} alt="Open" className="w-4 h-4 inline ml-1" />
                             </a>
@@ -158,12 +158,12 @@ export default function Projects(){
                     
                     <div className="bg-slate-800/60 rounded-lg max-w-4xl mx-auto">
                         <h2 className="w-fit mx-auto text-center text-lg sm:text-xl md:text-2xl lg:text-3xl pt-2 underline-behind font-semibold">
-                            Checkers AI Bot
+                            AI Chess & Checkers Bot
                         </h2>
                         <p className="py-4 px-4 text-left text-xs sm:text-sm md:text-md 2xl:text-lg">
-                            An AI-driven checkers bot leveraging the game theory alpha-beta pruning algorithm paired with multiple heuristics for board state evaluation. 
-                            Features include a user vs. AI GUI with adjustable difficulty levels and AI tournaments to benchmark heuristic performance. 
-                            Performance analysis was conducted using metrics such as win rates, average moves, and thinking time per move.
+                            A mobile app where users play checkers or chess against an AI powered by alpha-beta pruning and custom heuristics. 
+                            It includes a custom-built chess engine designed for efficient move generation and evaluation. 
+                            Features include adjustable difficulty, AI tournaments, and performance tracking using metrics like win rate, move count, and thinking time.
                         </p>
                     </div>
                 </div>
