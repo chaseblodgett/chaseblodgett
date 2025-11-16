@@ -66,7 +66,7 @@ export default function Projects(){
                                 backgroundImage: 'linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(17,24,39,0.9), rgba(23,37,84,0.9))',
                                 backgroundBlendMode: 'overlay',
                                 }}>
-                            <a href="http://travelgram.us-east-1.elasticbeanstalk.com/home" target="_blank" rel="noopener noreferrer" className="text-lg">
+                            <a href="https://travelgram-app-0bcf3d977e1b.herokuapp.com/home" target="_blank" rel="noopener noreferrer" className="text-lg">
                                 Live App
                                 <img src={`${process.env.PUBLIC_URL}/open.svg`} alt="Open" className="w-4 h-4 inline ml-1" />
 

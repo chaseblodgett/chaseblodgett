@@ -45,14 +45,15 @@ export default function AboutMe(){
                     <img src={`${process.env.PUBLIC_URL}/person.svg`} className="person-svg"/>
                     
                     <p className="px-1 sm:px-2 md:px-6 lg:px-10 text-left text-sm md:text-lg 2xl:text-xl xl:px-20 2xl:px-40 text-slate-300">
-                        Hello! My name is Chase, and I recently graduated from the University of Minnesota–Twin Cities with a degree in Computer Science. 
+                        Hello! My name is Chase, and I am a Computer Science graduate from the University of Minnesota–Twin Cities.
+                        I'm currently working as a full-stack software engineer at Evadata.
+                        I primarily work with Node.js and React.js, using AWS for infrastructure and deployments.
                         I really enjoy building things with code, learning new tech, and working on fun projects in my free time. 
-                        I have a strong background working with Python, C, Java, and JavaScript, and I’ve built projects in each — from fun simple programs to full-stack web apps. 
-                        Lately, I’ve been working a lot with React.js, Express.js, and Node.js, and I really enjoy the creativity and problem-solving nature that comes with web development.
-                        Outside of tech, I like to stay active — running, hiking, camping, or getting a game of basketball in with friends whenever I can. 
-                        Right now, I’m actively looking for a full-time software engineering role. 
-                        I’d love to connect if you’re hiring or just want to chat. 
+                        I have a strong background working with Python, C, Java, and JavaScript, and I’ve built projects in each, from fun simple programs to full-stack web apps. 
+                        Outside of tech, I like to stay active - running, hiking, camping, or getting a game of basketball in with friends whenever I can. 
+                        I’d love to connect and discuss opportunities or just to chat. 
                         Always happy to meet new people, so don’t hesitate to reach out!
+                        This website was coded using React.js and Tailwind CSS, I hope you like it!
                     </p> 
 
 
