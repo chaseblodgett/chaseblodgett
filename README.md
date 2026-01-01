@@ -1,6 +1,6 @@
 # Hi there 👋 this is Chase!
 
-Hey, I’m Chase — I like building cool things on the web, learning new stuff, and turning ideas into full projects.
+Hey, I’m Chase and I like to code.
 
 ### 🔗 [Portfolio Website](https://chaseblodgett.github.io/chaseblodgett/)
 
