@@ -46,8 +46,8 @@ export default function Contact() {
                 <div className="flex flex-col gap-4 text-left text-slate-200 text-md md:text-lg">
                     <div className="flex items-center gap-3">
                         <Mail className="w-5 h-5 text-purple-400" />
-                        <a href="mailto:blodg072@umn.edu" className="hover:text-purple-400 transition">
-                        blodg072@umn.edu
+                        <a href="mailto:chaseblodgett241@gmail.com" className="hover:text-purple-400 transition">
+                        chaseblodgett241@gmail.com
                         </a>
                     </div>
 
