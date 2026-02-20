@@ -72,7 +72,7 @@ export default function ProjectCard({name, description, technologies = [], pictu
           variant="h4"
           fontWeight={600}
           gutterBottom
-          sx={{ color: "#cbd5e1" }}
+          sx={{ color: "#cbd5e1" , fontFamily: "'Space Grotesk', sans-serif" }}
         >
           {name}
         </Typography>
@@ -86,6 +86,7 @@ export default function ProjectCard({name, description, technologies = [], pictu
               sx={{
                 bgcolor: "#a855f7",
                 color: "#fff",
+                fontFamily: "'Rubik', sans-serif"
               }}
             />
           ))}
@@ -93,7 +94,7 @@ export default function ProjectCard({name, description, technologies = [], pictu
 
         <Typography
           variant="body1"
-          sx={{ color: "rgba(255,255,255,0.8)" }}
+          sx={{ color: "rgba(255,255,255,0.8)" , fontFamily: "'Rubik', sans-serif"}}
         >
           {description}
         </Typography>

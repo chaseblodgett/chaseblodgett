@@ -6,7 +6,7 @@ const projects = [
     {
         name: "Travelgram", 
         description: "Travelgram is a full-stack social media app for travelers to share their trips, connect with friends, and explore new destinations. It features user authentication, photo uploads via Cloudinary, and real-time messaging using Socket.io. Utilizes the Google Maps API for interactive trip visualization, and features like a bucket list, friend system, and trip sharing to enhance the social experience.",
-        technologies: ["Express.js", "React", "MongoDB", "Tailwind CSS", "Socket.io", "Cloudinary"],
+        technologies: ["Express.js", "React", "MongoDB", "Tailwind CSS", "Socket.io"],
         picture: `${process.env.PUBLIC_URL}/travelgram.jpeg`,
         githubUrl: "https://github.com/chaseblodgett/travelgram",
         liveUrl: "https://travelgram-app-0bcf3d977e1b.herokuapp.com/home"
